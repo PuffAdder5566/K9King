@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" type="text/css" href="Home_css.css">
+    <link rel="stylesheet" href="cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/fontawesome.min.css">
+  </head>
+  <body>
+    <header>
+      <div class="logo">Logo</div>
+      <div class="menu-toggle">
+        <button class="menu" onclick="this.classList.toggle('opened');this.setAttribute('aria-expanded', this.classList.contains('opened'))" aria-label="Main Menu">
+     <svg width="100" height="70" viewBox="0 0 100 100">
+       <path class="line line1" d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
+       <path class="line line2" d="M 20,50 H 80" />
+       <path class="line line3" d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
+     </svg>
+   </button>
+      </div>
+      <nav>
+        <ul>
+          <li> <a href="#" class="active">Home</a> </li>
+          <li> <a href="#">About</a> </li>
+          <li> <a href="#">Services</a> </li>
+          <li> <a href="#">Team</a> </li>
+          <li> <a href="#">Portfolio</a> </li>
+          <li> <a href="#"> Contact</a> </li>
+        </ul>
+      </nav>
+
+
+
+
+
+    </header>
+            <div class="nav_bar">
+              <h1>K9 King </h1>
+            </div>
+
+             <!-- <img class="pittbul_big" src="photos/pittbull.jpg" class="img"> -->
+            <!-- <div class="shadow">
+              <p></p>
+            </div>  -->
+
+      <div class="Welcome_text" >
+        <h1><a>Affec</a>tive Dog Training</h1>
+        <br>
+        <ul>
+          <li><a>- </a>No prong collers</li>
+          <br>
+          <li><a>- </a>No shock collers</li>
+        </ul>
+      </div>
+
+      <div class="portfolio" id="portfolio">
+        <p class="text1"><br><br>Caleb Haley is certified and approved by Animal Behavior College and the International Association of Animal Behavior Consultants (IAABC). He has a passion to work with dogs with behavioral problems, aggressive dogs are his favorite to work with. He is currently a full-time college student studying psychology and business management. He has never met a case that he could not work with.
+          <br><br><br></p>
+          <img src="photos/lucy_cabin.jpg" class="img">
+      </div>
+
+      <div class="serviceTitle">
+        <h2>Services</h2>
+      </div>
+
+      <div class="services" id="services">
+          <div class="container">
+              <div class="card">
+                <div class="imgbx">
+                    <img src="photos/puppy.jpg">
+                  </div>
+                  <div class="content">
+                    <h2>Puppy Obedience Classes</h2>
+                    <p>Puppy Obedience Classes target the wants and desires of the puppy </p>
+                  </div>
+                </div>
+              </div>
+
+        <div class="container">
+            <div class="card">
+              <div class="imgbx">
+                <img src="photos/pittbul_sitting2.jpg">
+              </div>
+              <div class="content">
+                <h2>Behavior Modification</h2>
+                <p>change bad habets with some tlc</p>
+              </div>
+            </div>
+          </div>
+
+
+
+
+      <div class="container">
+        <div class="card">
+          <div class="imgbx">
+            <img src="photos/dog_running.jpg">
+          </div>
+          <div class="content">
+            <h2>Basic Obedience</h2>
+            <p>Teaching dogs to love with there heart not tongue </p>
+          </div>
+        </div>
+      </div>
+
+
+
+  </div>
+  <div class="text2">
+    <h1>Training Methods</h1>
+    <p>Caleb is certified to train dogs using the positive reinforcement methods. In obedience lessons Caleb uses treats and games to keep the dog engaged. He claims dogs learn best this way. Unlike other dog obedience instructor, Caleb is not completely against using some positive punishment techniques. He believes that there is a correct time to punish the dog, and if you punish the dog at an incorrect time it can/will lead to other problematic behaviors. Caleb believes in the LIMA (least intrusive minimally aversive) approach. LIMA believes in a hierarchy in solving animal behavior problems. At the top of the hierarchy is the physical component of the dog, is the dog physically healthy? At the bottom of the LIMA hierarchy is punishment. Most of the time, while working with aggressive dogs, Caleb can easily rule out the first steps in LIMA approach but he has never met a case where he has had to use a prong collar or an electric collar.
+</p>
+  </div>
+
+  <div class="contactinfo">
+    <h2>Contact me using any of the following methods</h2>
+    <a href="#">
+      <img src="icons/instagramicon.png"  >
+    </a>
+    <a href="#">
+      <img src="icons/email.png"  >
+    </a>
+    <a href="#">
+      <img src="icons/phone.png"  >
+    </a>
+  </div>
+
+  <script src="code.jquery.com/jquery-3.3.1.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function(){
+      $('.menu-toggle').click(function(){
+        $('nav').toggleClass('active')
+      })
+    })
+  </script>
+</body>
+</html>
